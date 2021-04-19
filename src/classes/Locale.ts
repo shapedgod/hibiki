@@ -10,6 +10,9 @@ import config from "../../config.json";
 
 export class LocaleSystem {
   locales: Record<string, string>;
+  /**
+   * @param {string} path Path to parse strings.
+   */
   constructor(path: string) {
     this.locales = {};
     if (path) this.updateLocales(path);

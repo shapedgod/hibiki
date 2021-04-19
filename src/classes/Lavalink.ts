@@ -23,6 +23,9 @@ export class Lavalink {
   eventHandler: (m: Member, channel: VoiceChannel, oldchannel: VoiceChannel) => void;
 
   // Creates a new lavalink manager
+  /**
+   * @param {HibikiClient} bot The bot the lavalink manager is connected to.
+   */
   constructor(bot: HibikiClient) {
     this.manager = new Manager({
       plugins: plugins,

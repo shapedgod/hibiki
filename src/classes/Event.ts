@@ -16,6 +16,8 @@ export abstract class Event {
     this.convertHex = convertHex;
     this.tagUser = tagUser;
   }
-
+  /** 
+   * @param {string} event The event that invokes the callback.
+   */
   abstract run(event: string, ...params: unknown[]): Promise<unknown> | void;
 }

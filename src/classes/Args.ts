@@ -11,7 +11,9 @@ import { getRESTUser } from "../utils/getRESTUser";
 export class Args {
   argtypes: ArgTypes;
   bot: HibikiClient;
-
+  /**
+   * @param {HibikiClient} bot The bot
+   */
   constructor(bot: HibikiClient) {
     this.bot = bot;
     this.argtypes = {

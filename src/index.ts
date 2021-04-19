@@ -9,3 +9,5 @@ import { HibikiClient } from "./classes/Client";
 import config from "../config.json";
 
 new HibikiClient(config.token, config.eris as ClientOptions);
+
+

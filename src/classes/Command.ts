@@ -22,8 +22,11 @@ export abstract class Command {
   voice = false;
 
   abstract description: string;
-
+  
   constructor(protected bot: HibikiClient, public name: string, public category: string) {}
-
+  /**
+   * @param {Message} msg The message that invokes the commands.
+   * @param {Array} args The arguments.
+   */
   abstract run(msg: Message, pargs?: ParsedArgs[], args?: string[], ...extra: any): Promise<unknown>;
 }
